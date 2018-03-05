@@ -18,7 +18,7 @@ class MyTabBarController: UITabBarController, CLLocationManagerDelegate {
 
         myLocationManager = MyLocationManager(isBackGround:false) //MylocationmManagerを実体化
         myLocationManager.delegate = self //デリゲート登録
-        myLocationManager.startGPS() //GPSを動かす
+        myLocationManager.startGPSandCompass() //GPSを動かす
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,13 @@ class MyTabBarController: UITabBarController, CLLocationManagerDelegate {
         
         let first = self.viewControllers?.first as! FirstViewController //最初のビューコントローラを取得
         first.updateLocation(location) //ラベルをアップデートする
+    }
+    
+    //コンパス更新
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        
+        let second = self.viewControllers?[1] as! SecondViewController
+        second.updateHeading(newHeading)
     }
 
 

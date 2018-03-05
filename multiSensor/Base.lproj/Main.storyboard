@@ -183,30 +183,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="86.5" y="312" width="202" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="79.5" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compassPointer.png" translatesAutoresizingMaskIntoConstraints="NO" id="Waj-iR-ufR">
+                                <rect key="frame" x="72.5" y="218.5" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="V6H-0O-uIZ"/>
+                                    <constraint firstAttribute="height" constant="230" id="XV9-OC-4YD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compassBase.png" translatesAutoresizingMaskIntoConstraints="NO" id="IF1-wX-Nhw">
+                                <rect key="frame" x="72.5" y="218.5" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="px5-Ll-cA7"/>
+                                    <constraint firstAttribute="height" constant="230" id="sAD-Gf-fYf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-Sw-CQO">
+                                <rect key="frame" x="72.5" y="70" width="230" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="真北" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQQ-pU-rlL">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-th-Pvl">
+                                        <rect key="frame" x="182" y="0.0" width="48" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FxQ-jz-MML"/>
+                                    <constraint firstAttribute="width" constant="230" id="xX3-XQ-FIr"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="RWO-Sw-CQO" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="50" id="73x-OX-dXf"/>
+                            <constraint firstItem="IF1-wX-Nhw" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="9lY-L6-C0L"/>
+                            <constraint firstItem="Waj-iR-ufR" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="9oK-80-FNF"/>
+                            <constraint firstItem="IF1-wX-Nhw" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FZz-GI-ltw"/>
+                            <constraint firstItem="Waj-iR-ufR" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="G4I-v1-Hxm"/>
+                            <constraint firstItem="RWO-Sw-CQO" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="xtY-kZ-gY9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="コンパス" image="tabButtonCompass.png" selectedImage="tabButtonCompass.png" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="imagePointer" destination="Waj-iR-ufR" id="a1B-gn-DWy"/>
+                        <outlet property="labelDegree" destination="z7k-th-Pvl" id="UR6-uE-AS2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,6 +261,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compassBase.png" width="230" height="230"/>
+        <image name="compassPointer.png" width="230" height="230"/>
         <image name="tabButtonCompass.png" width="40" height="40"/>
         <image name="tabButtonEtc.png" width="40" height="40"/>
         <image name="tabButtonGps.png" width="40" height="40"/>

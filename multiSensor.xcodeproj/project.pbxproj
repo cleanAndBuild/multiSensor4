@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C8F2913204D77F8003A7222 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F2912204D77F8003A7222 /* MyTabBarController.swift */; };
+		1C8F2916204D827F003A7222 /* compassPointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F2914204D827F003A7222 /* compassPointer@2x.png */; };
+		1C8F2917204D827F003A7222 /* compassBase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F2915204D827F003A7222 /* compassBase@2x.png */; };
 		1C9F2A78204D6C1D00A7C174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F2A77204D6C1D00A7C174 /* AppDelegate.swift */; };
 		1C9F2A7A204D6C1D00A7C174 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F2A79204D6C1D00A7C174 /* FirstViewController.swift */; };
 		1C9F2A7C204D6C1D00A7C174 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F2A7B204D6C1D00A7C174 /* SecondViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		1C8F2912204D77F8003A7222 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		1C8F2914204D827F003A7222 /* compassPointer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassPointer@2x.png"; sourceTree = "<group>"; };
+		1C8F2915204D827F003A7222 /* compassBase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassBase@2x.png"; sourceTree = "<group>"; };
 		1C9F2A74204D6C1D00A7C174 /* multiSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9F2A77204D6C1D00A7C174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C9F2A79204D6C1D00A7C174 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				1C9F2A8D204D6D2B00A7C174 /* tabButtonCompass@2x.png */,
 				1C9F2A8B204D6D2B00A7C174 /* tabButtonEtc@2x.png */,
 				1C9F2A8C204D6D2B00A7C174 /* tabButtonGps@2x.png */,
+				1C8F2915204D827F003A7222 /* compassBase@2x.png */,
+				1C8F2914204D827F003A7222 /* compassPointer@2x.png */,
 				1C9F2A82204D6C1D00A7C174 /* LaunchScreen.storyboard */,
 				1C9F2A85204D6C1D00A7C174 /* Info.plist */,
 			);
@@ -144,9 +150,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8F2917204D827F003A7222 /* compassBase@2x.png in Resources */,
 				1C9F2A84204D6C1D00A7C174 /* LaunchScreen.storyboard in Resources */,
 				1C9F2A81204D6C1D00A7C174 /* Assets.xcassets in Resources */,
 				1C9F2A7F204D6C1D00A7C174 /* Main.storyboard in Resources */,
+				1C8F2916204D827F003A7222 /* compassPointer@2x.png in Resources */,
 				1C9F2A8F204D6D2C00A7C174 /* tabButtonGps@2x.png in Resources */,
 				1C9F2A8E204D6D2C00A7C174 /* tabButtonEtc@2x.png in Resources */,
 				1C9F2A90204D6D2C00A7C174 /* tabButtonCompass@2x.png in Resources */,
@@ -303,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NCY5BEZ37J;
 				INFOPLIST_FILE = multiSensor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -319,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NCY5BEZ37J;
 				INFOPLIST_FILE = multiSensor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
