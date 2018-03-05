@@ -13,6 +13,10 @@
 		1C9F2A7F204D6C1D00A7C174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A7D204D6C1D00A7C174 /* Main.storyboard */; };
 		1C9F2A81204D6C1D00A7C174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A80204D6C1D00A7C174 /* Assets.xcassets */; };
 		1C9F2A84204D6C1D00A7C174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A82204D6C1D00A7C174 /* LaunchScreen.storyboard */; };
+		1C9F2A8E204D6D2C00A7C174 /* tabButtonEtc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A8B204D6D2B00A7C174 /* tabButtonEtc@2x.png */; };
+		1C9F2A8F204D6D2C00A7C174 /* tabButtonGps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A8C204D6D2B00A7C174 /* tabButtonGps@2x.png */; };
+		1C9F2A90204D6D2C00A7C174 /* tabButtonCompass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F2A8D204D6D2B00A7C174 /* tabButtonCompass@2x.png */; };
+		1C9F2A92204D6E8A00A7C174 /* etcSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F2A91204D6E8A00A7C174 /* etcSensorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1C9F2A80204D6C1D00A7C174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9F2A83204D6C1D00A7C174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C9F2A85204D6C1D00A7C174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9F2A8B204D6D2B00A7C174 /* tabButtonEtc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabButtonEtc@2x.png"; sourceTree = "<group>"; };
+		1C9F2A8C204D6D2B00A7C174 /* tabButtonGps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabButtonGps@2x.png"; sourceTree = "<group>"; };
+		1C9F2A8D204D6D2B00A7C174 /* tabButtonCompass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabButtonCompass@2x.png"; sourceTree = "<group>"; };
+		1C9F2A91204D6E8A00A7C174 /* etcSensorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etcSensorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 				1C9F2A77204D6C1D00A7C174 /* AppDelegate.swift */,
 				1C9F2A79204D6C1D00A7C174 /* FirstViewController.swift */,
 				1C9F2A7B204D6C1D00A7C174 /* SecondViewController.swift */,
+				1C9F2A91204D6E8A00A7C174 /* etcSensorViewController.swift */,
 				1C9F2A7D204D6C1D00A7C174 /* Main.storyboard */,
 				1C9F2A80204D6C1D00A7C174 /* Assets.xcassets */,
+				1C9F2A8D204D6D2B00A7C174 /* tabButtonCompass@2x.png */,
+				1C9F2A8B204D6D2B00A7C174 /* tabButtonEtc@2x.png */,
+				1C9F2A8C204D6D2B00A7C174 /* tabButtonGps@2x.png */,
 				1C9F2A82204D6C1D00A7C174 /* LaunchScreen.storyboard */,
 				1C9F2A85204D6C1D00A7C174 /* Info.plist */,
 			);
@@ -129,6 +141,9 @@
 				1C9F2A84204D6C1D00A7C174 /* LaunchScreen.storyboard in Resources */,
 				1C9F2A81204D6C1D00A7C174 /* Assets.xcassets in Resources */,
 				1C9F2A7F204D6C1D00A7C174 /* Main.storyboard in Resources */,
+				1C9F2A8F204D6D2C00A7C174 /* tabButtonGps@2x.png in Resources */,
+				1C9F2A8E204D6D2C00A7C174 /* tabButtonEtc@2x.png in Resources */,
+				1C9F2A90204D6D2C00A7C174 /* tabButtonCompass@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9F2A7C204D6C1D00A7C174 /* SecondViewController.swift in Sources */,
+				1C9F2A92204D6E8A00A7C174 /* etcSensorViewController.swift in Sources */,
 				1C9F2A78204D6C1D00A7C174 /* AppDelegate.swift in Sources */,
 				1C9F2A7A204D6C1D00A7C174 /* FirstViewController.swift in Sources */,
 			);
@@ -281,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCY5BEZ37J;
 				INFOPLIST_FILE = multiSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stepAppSchool.multiSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCY5BEZ37J;
 				INFOPLIST_FILE = multiSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stepAppSchool.multiSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
